@@ -1,0 +1,49 @@
+<!--
+Created by: Preston Luie 01971155
+Github account: PLuie88
+10/30/24
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" href="./style.css" />
+  <meta charset="utf-8">
+  <title>Dynamic Multiplication table</title>
+</head>
+
+<body>
+  <div id="content">
+    <form id="tableBounds"> <!--Form to get user input for max and min-->
+
+      <!--Has placehodler minCspan and maxCspan which get updated if the bounds are not correct through the js file-->
+      <h3>Column Bounds</h3>
+      <label for="minC">Column Min: </label>
+      <input type="text" id="minC"><br><br>
+      <div id="minCSpan"></div>
+      <label for="maxC">Column Max: </label>
+      <input type="text" id="maxC"><br><br>
+      <div id="maxCSpan"></div>
+
+
+      <!--Has placehodler minRspan and maxRspan which get updated if the bounds are not correct through the js file-->
+      <h3>Row Bounds</h3>
+      <label for="minRow">Row Min: </label>
+      <input type="text" id="minRow"><br><br>
+      <div id="minRSpan"></div>
+      <label for="maxRow">Row Max: </label>
+      <input type="text" id="maxRow"><br><br>
+      <div id="maxRSpan"></div>
+
+      <!--the return false for the submit button make sure that the form does not reset the page when submit-->
+      <input type="submit" id="submitButton" onclick="subButtonClicked(); return false;">
+
+    </form>
+  </div>
+  <div id="tableHolder"></div>
+</body>
+<script src="./table.js"></script>
+
+</html>
